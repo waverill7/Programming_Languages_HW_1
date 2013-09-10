@@ -5,16 +5,10 @@ def anagram( s, t ):
     return sorted( s ) == sorted( t )
 
 def listPowersOfTwo( limit ):
-    result = []
-    for x in powers_of_two( limit ):
-        result.append( x )
-    return result
+    return [ x for x in powers_of_two( limit ) ]
 
 def listPowers( base, limit ):
-    result = []
-    for x in powers( base, limit ):
-        result.append( x )
-    return result
+    return [ x for x in powers( base, limit ) ]
 
 class TestGettingStartedFunctions( unittest.TestCase ):
 
