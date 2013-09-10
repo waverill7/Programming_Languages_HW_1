@@ -4,7 +4,7 @@ fileName = sys.argv[ 1 ]
 fileData = open( fileName, "r" )
 
 count = 0
-whiteSpace = ( "\n", " ", "\t" ]
+whiteSpace = [ "\n", " ", "\t" ]
 aBlankLine = True
 
 for line in fileData:
