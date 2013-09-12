@@ -1,10 +1,9 @@
 import sys;
 
 result = ''
-s = sys.argv[ 1 ]
+s =  sys.argv[ 1 ]
 
-print result
-
-for x in s:
-    result += x
+for x in range( 0, len( s ) + 1 ):
     print result
+    if x < len( s ):
+        result += s[ x ]
