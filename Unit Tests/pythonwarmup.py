@@ -9,13 +9,9 @@ def change( cents ):
 
 #Problem 2:
 def strip_vowels( s ):
-    vowels = 'aeiou'
-    vowels += vowels.upper()
     result = ''
-    for c in s:
-        if c not in vowels:
-            result += c
-    return result
+    vowels = 'aeiouAEIOU'
+    return result.join( [ c for c in s if c not in vowels ] )
 
 #Problem 3:
 def scramble( s ):
